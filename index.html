@@ -26,44 +26,6 @@
         <p2>Te contactarémos en 24 horas, aceptamos todos los medios de pago, para más información contáctanos a través de nuestros canales.<a href="#"> Conoce nuestros términos y condiciones</a></p2>
         <img src="logoer.png">
 </div>
-<div class="slider">
-    <img src="logo1.png" alt="Image 1" class="active">
-    <img src="Logo2.png" alt="Image 2">
-    <img src="logo3.png" alt="Image 3">
-    <img src="logo4.png" alt="Image 3">
-    <div class="slider-buttons">
-      <button id="prev">❮</button>
-      <button id="next">❯</button>
-    </div>
-  <script>
-    const images = document.querySelectorAll('.slider img');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    let currentIndex = 0;
-
-    function showImage(index) {
-      images.forEach((img, i) => {
-        img.classList.remove('active');
-        if (i === index) {
-          img.classList.add('active');
-        }
-      });
-    }
-
-    function showNextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex);
-    }
-
-    function showPrevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex);
-    }
-
-    nextButton.addEventListener('click', showNextImage);
-    prevButton.addEventListener('click', showPrevImage);
-</script>
-</div>
 <div id="cotizaciones">
     <img src="logomaker.png">
     <p3>Cuéntanos más acerca de tu idea, nosotros la haremos realidad de acuerdo a tus expectativas</p3>
