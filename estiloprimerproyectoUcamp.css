@@ -126,22 +126,24 @@ p2{
 #slidercontainer
 {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      
       background-color: #f4f4f4;
-      left:500px;
+      
 }
     .slider {
+      margin: 0
       position: relative;
       width: 80%;
       max-width: 800px;
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 100vh;
+      left:500px;
     }
 
     .slider img {
