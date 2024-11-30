@@ -128,7 +128,7 @@ p2{
       padding: 0;
       display: flex;
       justify-content: center;
-      position: relative;
+      position: center;
       width: 80%;
       max-width: 800px;
       overflow: hidden;
