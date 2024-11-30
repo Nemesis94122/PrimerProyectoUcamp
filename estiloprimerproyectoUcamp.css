@@ -124,14 +124,12 @@ p2{
     color: crimson;
 }    
     .slider {
-      margin: 0;
       position: relative;
       width: 80%;
       max-width: 800px;
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      left:500px;
     }
 
     .slider img {
