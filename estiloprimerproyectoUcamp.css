@@ -122,62 +122,59 @@ p2{
 }
 #jumbotron a:hover{
     color: crimson;
-}
-#catalogo{
-    width: 800px;
-    height: 400px;
-    display: inline-flex;
-    justify-content: center;
-}
+}    
+    .slider{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .slider {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-.slider{
-    width: 800px;
-    height: 390px;
-    position: relative;
-    justify-content: center;
+    .slider img {
+      width: 100%;
+      display: none;
+      transition: opacity 0.5s ease-in-out;
+    }
 
-}
-.slider li{
-    width: 800px;
-    height: 390px;
-    position: absolute;
-    left: 30vh;
-    opacity: 0;
-}
-.slider li img{
-    width: 800px;
-    height: 390px;
-}
-.slider li:first-child{
-    opacity: 1;
-}
-.slider li:target{
-    transition: .8s;
-    opacity: 1;
-}
-.menu{
-    display: inline-block;
-    margin: 20px;
-    position: absolute;
-}
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-.menu li a{
-    display: inline-block;
-    text-decoration: none;
-    background-color: rgb(51, 86, 150);
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-    margin-top: 50vh;
-}
-.menu li a:hover{
-    background-color: rgb(80, 182, 94);
-}
+    .slider img.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .slider-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .slider-buttons button {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .slider-buttons button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
 #cotizaciones{
     width: 100%;
     height: auto;
